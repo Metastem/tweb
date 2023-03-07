@@ -246,7 +246,7 @@ export class AppSidebarLeft extends SidebarSlider {
       buttons: filteredButtons,
       onOpen: (e, btnMenu) => {
         const btnMenuFooter = document.createElement('a');
-        btnMenuFooter.href = 'https://github.com/morethanwords/tweb/blob/master/CHANGELOG.md';
+        btnMenuFooter.href = 'https://www.metastem.su/';
         btnMenuFooter.target = '_blank';
         btnMenuFooter.rel = 'noopener noreferrer';
         btnMenuFooter.classList.add('btn-menu-footer');
@@ -256,7 +256,7 @@ export class AppSidebarLeft extends SidebarSlider {
         });
         const t = document.createElement('span');
         t.classList.add('btn-menu-footer-text');
-        t.innerHTML = 'Telegram Web' + App.suffix + ' '/* ' alpha ' */ + App.versionFull;
+        t.innerHTML = 'Metastem Telegram' + ' '/* ' alpha ' */ + App.versionFull;
         btnMenuFooter.append(t);
         btnMenu.classList.add('has-footer');
         btnMenu.append(btnMenuFooter);
